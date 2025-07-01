@@ -1,3 +1,4 @@
+//This program will check if a string is a palindrome or not
 import java.util.Scanner;
 
 public class Task4 {
