@@ -15,5 +15,6 @@ public class Task4 {
         StringBuilder sb = new StringBuilder(input);
             
         System.out.println((sb.toString().equals(sb.reverse().toString())) ? "The input string is a palindrome." : "The input string is not palindrome.") ;
+        sc.close();
     }
 }
