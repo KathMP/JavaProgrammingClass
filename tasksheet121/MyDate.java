@@ -1,4 +1,4 @@
-package Tasksheet121;
+package tasksheet121;
 public class MyDate {
     public static void main(String[] args) {
         DateTask date1 = new DateTask(1, 1, 1978);
