@@ -25,13 +25,14 @@ public class Assignment5 {
                 }
                 System.out.println("Sum: " + sum);
                 break;
-            }
-            try {
-                int number = Integer.parseInt(input);
-                numbers.add(number);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input! Please only enter integers or type 'add' to get the sum of the numbers.");
-            }
+            } else{
+                try {
+                    int number = Integer.parseInt(input);
+                    numbers.add(number);
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input! Please only enter integers or type 'add' to get the sum of the numbers.");
+                }
+            }   
         }
         sc.close();
     }
