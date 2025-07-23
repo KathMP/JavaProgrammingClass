@@ -10,27 +10,29 @@ public class Assignment4 {
         System.out.println("\nThis program will determine if a certain number is: \n - Odd or Even\n - Positive or Negative\n - Zero");
         System.out.print("Enter an integer: ");
 
-        if(sc.hasNextInt()){
+        if (sc.hasNextInt()) {
             int checkNum = sc.nextInt();
             System.out.println("\nRESULTS: ");
             System.out.println("Number: " + checkNum);
             oddEvenChecker(checkNum);
             signChecker(checkNum);
-        }else System.out.println("Invalid input! Please enter integers only.");
+        } else System.out.println("Invalid input! Please enter integers only.");
         sc.close();
     }
-    public static boolean oddEvenChecker(int num){
-        if(num%2 == 0){
+
+    public static boolean oddEvenChecker(int num) {
+        if (num % 2 == 0) {
             System.out.println("Parity: Even");
             return true;
-        }else{
+        } else {
             System.out.println("Parity: Odd");
             return false;
-        } 
+        }
     }
-    public static void signChecker(int num){
-        if(num > 0) System.out.println("Sign: Positive");
-        else if(num < 0) System.out.println("Sign: Negative");
+
+    public static void signChecker(int num) {
+        if (num > 0) System.out.println("Sign: Positive");
+        else if (num < 0) System.out.println("Sign: Negative");
         else System.out.println("Sign: Zero (neutral)");
     }
-}                         
+}

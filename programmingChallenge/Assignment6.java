@@ -1,0 +1,1 @@
+//Integer input from the user and uses a for loop to generate following pattern

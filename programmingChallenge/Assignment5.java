@@ -14,22 +14,22 @@ public class Assignment5 {
         System.out.println("\nHOW TO USE? \nYou may input all the numbers that you want to add.");
         System.out.println("Once done, simply type \"add\" to get their sum...\n");
 
-        while(true){
+        while (true) {
             System.out.print("Enter a number (or type 'add' to get their sum): ");
             String input = sc.nextLine().trim();
 
-            if(input.equalsIgnoreCase("add")){
+            if (input.equalsIgnoreCase("add")) {
                 int sum = 0;
-                for(int num:numbers){
-                    sum += num;                    
+                for (int num : numbers) {
+                    sum += num;
                 }
-                System.out.println("Sum: "+ sum);
+                System.out.println("Sum: " + sum);
                 break;
             }
-            try{
+            try {
                 int number = Integer.parseInt(input);
                 numbers.add(number);
-            }catch(NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Invalid input! Please only enter integers or type 'add' to get the sum of the numbers.");
             }
         }

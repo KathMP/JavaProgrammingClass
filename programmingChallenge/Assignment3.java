@@ -4,46 +4,37 @@ package programmingChallenge;
 
 import java.util.Scanner;
 
-public class Assignment3{
-    public static void main(String[] args) {
-        
-                Scanner sc = new Scanner(System.in);
-                        System.out.println("This program accepts 1-7 input and print the day in a week that corresponds to that number.");
+public class Assignment3 {
+        public static void main(String[] args) {
 
-                                System.out.print("\nEnter an integer between 1 - 7: ");
-                                        
-                                                if(sc.hasNextInt()){
-                                                            
-                                                                        int num = sc.nextInt();
-                                                                                    
-                                                                                                switch (num) {
-                                                                                                                case 1:
-                                                                                                                                    System.out.println("Day of the week: Monday");
-                                                                                                                                                        break;
-                                                                                                                                                                        case 2:
-                                                                                                                                                                                            System.out.println("Day of the week: Tuesday");
-                                                                                                                                                                                                                break;
-                                                                                                                                                                                                                                case 3:
-                                                                                                                                                                                                                                                    System.out.println("Day of the week: Wednesday");
-                                                                                                                                                                                                                                                                        break;
-                                                                                                                                                                                                                                                                                        case 4:
-                                                                                                                                                                                                                                                                                                            System.out.println("Day of the week: Thursday");
-                                                                                                                                                                                                                                                                                                                                break;
-                                                                                                                                                                                                                                                                                                                                                case 5:
-                                                                                                                                                                                                                                                                                                                                                                    System.out.println("Day of the week: Friday");
-                                                                                                                                                                                                                                                                                                                                                                                        break;
-                                                                                                                                                                                                                                                                                                                                                                                                        case 6:
-                                                                                                                                                                                                                                                                                                                                                                                                                            System.out.println("Day of the week: Saturday");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                break;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                case 7:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    System.out.println("Day of the week: Sunday");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        break;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        default:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            System.out.println("Invalid input! Please enter an integer between 1-7.");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                break;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            else System.out.println("Invalid input! Please enter an integer between 1-7.");
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    sc.close();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+                Scanner sc = new Scanner(System.in);
+                System.out.println("This program accepts 1-7 input and print the day in a week that corresponds to that number.");
+
+                System.out.print("\nEnter an integer between 1 - 7: ");
+
+                if (sc.hasNextInt()) {
+
+                        int num = sc.nextInt();
+
+                        switch (num) {
+                                case 1: System.out.println("Day of the week: Monday");
+                                        break;
+                                case 2: System.out.println("Day of the week: Tuesday");
+                                        break;
+                                case 3: System.out.println("Day of the week: Wednesday");
+                                        break;
+                                case 4: System.out.println("Day of the week: Thursday");
+                                        break;
+                                case 5: System.out.println("Day of the week: Friday");
+                                        break;        
+                                case 6: System.out.println("Day of the week: Saturday");
+                                        break;        
+                                case 7: System.out.println("Day of the week: Sunday");
+                                        break;        
+                                default:System.out.println("Invalid input! Please enter an integer between 1-7.");
+                                        break;      
+                        }
+                } else  System.out.println("Invalid input! Please enter an integer between 1-7.");
+                sc.close();
+        }
+}
