@@ -36,5 +36,6 @@ public class Assignment12 {
                 }
             }
         }
+        sc.close();
     }
 }
