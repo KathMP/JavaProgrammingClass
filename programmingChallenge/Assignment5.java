@@ -33,6 +33,7 @@ public class Assignment5 {
                 System.out.println("Invalid input! Please only enter integers or type 'add' to get the sum of the numbers.");
             }
         }
+        sc.close();
     }
 }
 

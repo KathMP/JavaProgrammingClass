@@ -9,16 +9,18 @@ public class Assignment1 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter test score: ");
-        int score = sc.nextInt();
+        System.out.print("\nEnter test score: ");
 
-        if (score < 0 || score > 100) System.out.println("Invalid input");
-        else if (score < 60) System.out.println("Grade: F");
-        else if (score < 70) System.out.println("Grade: D");
-        else if (score < 80) System.out.println("Grade: C");
-        else if (score < 90) System.out.println("Grade: B");
-        else System.out.println("Grade: A");
-
+        if(sc.hasNextInt()){
+            int score = sc.nextInt();
+            if (score < 0 || score > 100) System.out.println("Invalid input!\n");
+            else if (score < 60) System.out.println("Grade: F\n");
+            else if (score < 70) System.out.println("Grade: D\n");
+            else if (score < 80) System.out.println("Grade: C\n");
+            else if (score < 90) System.out.println("Grade: B\n");
+            else System.out.println("Grade: A\n");
+        } else System.out.println("Invalid input!\n");
+        
         sc.close();
     }
 }

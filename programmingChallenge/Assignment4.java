@@ -16,7 +16,8 @@ public class Assignment4 {
             System.out.println("Number: " + checkNum);
             oddEvenChecker(checkNum);
             signChecker(checkNum);
-        } else System.out.println("Invalid input! Please enter integers only.");
+            System.out.println();
+        } else System.out.println("\nInvalid input! Please enter integers only.\n");
         sc.close();
     }
 
