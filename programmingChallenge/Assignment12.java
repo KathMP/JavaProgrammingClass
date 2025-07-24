@@ -18,21 +18,25 @@ public class Assignment12 {
             String input = sc.nextLine().trim();
 
             if (input.equalsIgnoreCase("done")) {
-                int sum = 0;
-                for (int number : numList) {
-                    sum += number;
+                if(numList.size() == 0){
+                    System.out.println("Input is empty.");
+                }else{
+                    int sum = 0;
+                    for (int number : numList) {
+                        sum += number;
+                    }
+                    System.out.println("\nRESULTS: ");
+                    System.out.println("Numbers: " + numList);
+                    System.out.println("Sum    : " + sum);
+                    System.out.println("Average: " + (sum / numList.size()));
+                    break;
                 }
-                System.out.println("\nRESULTS: ");
-                System.out.println("Numbers: " + numList);
-                System.out.println("Sum    : " + sum);
-                System.out.println("Average: " + (sum / numList.size()));
-                break;
             } else {
                 try {
                     int value = Integer.parseInt(input);
                     numList.add(value);
                 } catch (NumberFormatException e) {
-                    System.out.println("Invalid input!");
+                    System.out.println("Please enter a valid input.");
                 }
             }
         }
