@@ -18,5 +18,6 @@ public class Assignment6{
             }
             System.out.println();
         }
+        sc.close();
     }
 }
