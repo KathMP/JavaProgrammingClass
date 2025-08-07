@@ -28,8 +28,8 @@ public class Assignment9 {
             }
         }
         System.out.println("\nOUTPUT:");
-        System.out.println(vowelNum + " Vowels: " + vowelList);
-        System.out.println(consonantNum + " Consonants: " + consonantList + "\n");
+        System.out.println(vowelNum + " Vowel(s): " + vowelList);
+        System.out.println(consonantNum + " Consonant(s): " + consonantList + "\n");
 
     sc.close();
     }
